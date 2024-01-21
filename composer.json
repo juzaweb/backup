@@ -1,0 +1,32 @@
+{
+    "name": "juzaweb/backup",
+    "type": "juzaweb-plugin",
+    "license": "MIT",
+    "description": "Add and management backup for Juzaweb CMS",
+    "extra": {
+        "juzaweb": {
+            "name": "Backup",
+            "domain": "backup",
+            "providers": [
+                "Juzaweb\\Backup\\Providers\\BackupServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Juzaweb\\Backup\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Juzaweb\\Backup\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.0|^8.1"
+    },
+    "require-dev": {
+         "juzaweb/modules": "^1.0",
+         "juzaweb/dev-tool": "^1.0"
+    }
+}
