@@ -1,0 +1,1 @@
+# Backup plugin for Juzaweb CMS
