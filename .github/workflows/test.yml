@@ -8,3 +8,4 @@ jobs:
     with:
       vendor: juzaweb
       plugin: backup
+      version: dev-${{ github.head_ref || github.ref_name }}
