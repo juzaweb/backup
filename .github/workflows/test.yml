@@ -1,6 +1,10 @@
 name: Run phpunit test suite
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 * * * *'
 
 jobs:
   phpunit-test-suite:
@@ -8,4 +12,3 @@ jobs:
     with:
       vendor: juzaweb
       plugin: backup
-      version: dev-${{ github.head_ref || github.ref_name }}
